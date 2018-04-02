@@ -5,7 +5,9 @@
         <BehaviorDescription name="behavior" src="behavior_1" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
-    <Resources />
+    <Resources>
+        <File name="Tuning Note- D" src="Tuning Note- D.mp3" />
+    </Resources>
     <Topics />
     <IgnoredPaths />
 </Package>
