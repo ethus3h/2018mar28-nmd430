@@ -457,8 +457,8 @@ class MyClass(GeneratedClass):
                             <Resource name="Audio player" type="Lock" timeout="0" />
                         </Box>
                         <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="4" />
-                        <Link inputowner="4" indexofinput="2" outputowner="0" indexofoutput="2" />
                         <Link inputowner="3" indexofinput="2" outputowner="4" indexofoutput="5" />
+                        <Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="2" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
