@@ -7,6 +7,7 @@
     <Dialogs />
     <Resources>
         <File name="Tuning Note- D" src="Tuning Note- D.mp3" />
+        <File name="Tuning Note- D" src="Tuning Note- D.wav" />
     </Resources>
     <Topics />
     <IgnoredPaths />
