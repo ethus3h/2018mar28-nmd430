@@ -84,7 +84,7 @@ numFound = 0;
 
     // ----- DRAWING -----
 
-    hand.draw();
+    //hand.draw();
     // hand.drawSphere();
 
 
@@ -287,6 +287,7 @@ void sendOsc() {
       msg.add(0.);
     }
   }
+  System.out.println(msg);
   oscP5.send(msg, dest);
 }
 
@@ -304,4 +305,3 @@ void sendInputNames() {
   oscP5.send(msg, dest); 
   println("Sent finger names" + n);
 }
-
