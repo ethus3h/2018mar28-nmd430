@@ -84,7 +84,7 @@ numFound = 0;
 
     // ----- DRAWING -----
 
-    hand.draw();
+    //hand.draw();
     // hand.drawSphere();
 
 
