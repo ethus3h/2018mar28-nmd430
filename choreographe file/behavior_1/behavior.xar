@@ -15,7 +15,7 @@
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
                     <Diagram>
-                        <Box name="Sit Down" id="1" localization="8" tooltip="the robot tries to sit down from any position for a number of tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." x="314" y="411">
+                        <Box name="Sit Down" id="1" localization="8" tooltip="the robot tries to sit down from any position for a number of tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." x="525" y="663">
                             <bitmap>media/images/box/movement/sit_ground.png</bitmap>
                             <script language="4">
                                 <content>
@@ -166,7 +166,7 @@
                             </Timeline>
                             <Resource name="All motors" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Sound Peak" id="4" localization="8" tooltip="Detect sound peaks.&#x0A;Each time a sound peak is detected, the onPeak output is stimulated.&#x0A;&#x0A;Note: You can set the sensibility to detect the sound peak in parameters.&#x0A;&#x0A;V1.1.0" x="274" y="81">
+                        <Box name="Sound Peak" id="4" localization="8" tooltip="Detect sound peaks.&#x0A;Each time a sound peak is detected, the onPeak output is stimulated.&#x0A;&#x0A;Note: You can set the sensibility to detect the sound peak in parameters.&#x0A;&#x0A;V1.1.0" x="181" y="90">
                             <bitmap>media/images/box/sensors/STM.png</bitmap>
                             <script language="4">
                                 <content>
@@ -538,7 +538,7 @@
                             <Resource name="Left eye leds" type="Lock" timeout="0" />
                             <Resource name="Right eye leds" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Record Sound" id="5" localization="8" tooltip='Record a sound on the robot. You can choose to record only with one&#x0A;microphone (the front head microphone) in ogg format, or with four microphones&#x0A;(front, sides and rear head microphones) in wav format.&#x0A;&#x0A;If &quot;Temporary storage&quot; isn&apos;t checked, the output sound file is located in &quot;~/recordings/microphones/&lt;File name&gt;&quot;.&#x0A;Else, it is located in a temporary directory&#x0A;&#x0A;The onStopped output is stimulated at the end of the recording and contains the absolute path to the output sound file&#x0A;&#x0A;V1.1.0&#x0A;' x="120" y="552">
+                        <Box name="Record Sound" id="5" localization="8" tooltip='Record a sound on the robot. You can choose to record only with one&#x0A;microphone (the front head microphone) in ogg format, or with four microphones&#x0A;(front, sides and rear head microphones) in wav format.&#x0A;&#x0A;If &quot;Temporary storage&quot; isn&apos;t checked, the output sound file is located in &quot;~/recordings/microphones/&lt;File name&gt;&quot;.&#x0A;Else, it is located in a temporary directory&#x0A;&#x0A;The onStopped output is stimulated at the end of the recording and contains the absolute path to the output sound file&#x0A;&#x0A;V1.1.0&#x0A;' x="237" y="295">
                             <bitmap>media/images/box/interaction/rec_sound.png</bitmap>
                             <script language="4">
                                 <content>
