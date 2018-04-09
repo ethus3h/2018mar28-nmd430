@@ -21,7 +21,7 @@ float[] features = new float[15];
 void setup() {
 
   /* start oscP5, listening for incoming messages at port 12000 */
-  oscP5 = new OscP5(this, 9000);
+  oscP5 = new OscP5(this, 12000);
 }
 
 void draw() {
@@ -30,6 +30,7 @@ void draw() {
 
 
 void oscEvent(OscMessage theOscMessage) {
+  System.out.println("got it");
   if (theOscMessage.addrPattern().equals("/wek/outputs")) {
     float value = theOscMessage.get(0).floatValue();
     if (value > -0.05) {
