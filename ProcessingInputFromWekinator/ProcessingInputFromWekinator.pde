@@ -32,10 +32,10 @@ void draw() {
 void oscEvent(OscMessage theOscMessage) {
   if (theOscMessage.addrPattern().equals("/wek/outputs")) {
     float value = theOscMessage.get(0).floatValue();
-    if (value > 0) {
-      if (value > 0.05) {
-        if (value > 0.4) {
-          if ( value > 0.6) {
+    if (value > -0.05) {
+      if (value > 0) {
+        if (value > 0.3) {
+          if ( value > 0.4) {
             if (value > 0.8) {
               System.out.println("More than 8");
             }
