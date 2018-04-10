@@ -21,37 +21,33 @@ float[] features = new float[15];
 void setup() {
 
   /* start oscP5, listening for incoming messages at port 12000 */
-  oscP5 = new OscP5(this,9000);
-
-  
+  oscP5 = new OscP5(this, 9000);
 }
 
 void draw() {
-
 }
 
 
 
 void oscEvent(OscMessage theOscMessage) {
- if (theOscMessage.addrPattern().equals("/wek/outputs")) {
-  float value = theOscMessage.get(0).floatValue();
-  if(value > 0) {
-    if(value > 0.05) {
-      if(value > 0.4) {
-        if( value > 0.6) {
-          if(value > 0.8) {
-            System.out.println("More than 8");
-          }
+  if (theOscMessage.addrPattern().equals("/wek/outputs")) {
+    float value = theOscMessage.get(0).floatValue();
+    if (value > 0) {
+      if (value > 0.05) {
+        if (value > 0.4) {
+          if ( value > 0.6) {
+            if (value > 0.8) {
+              System.out.println("More than 8");
+            }
             System.out.println("More than 6");
           }
-            System.out.println("More than 4");
-          }
-                      System.out.println("More than 0.05");
-          }
-                      System.out.println("More than 0");
-
- }
- else {
-                         System.out.println("Lessthan or equal to 0");
- }
+          System.out.println("More than 4");
+        }
+        System.out.println("More than 0.05");
+      }
+      System.out.println("More than 0");
+    } else {
+      System.out.println("Lessthan or equal to 0");
+    }
+  }
 }
